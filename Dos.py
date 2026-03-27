@@ -17,7 +17,7 @@ def attack():
         except:
             pass
 
-# Using threading to send requests
+# Using threading to send multiple requests
 for i in range(100):
     thread = threading.Thread(target=attack)
     thread.start()
